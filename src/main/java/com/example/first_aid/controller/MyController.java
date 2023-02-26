@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MyController {
     @Autowired
     First_aidDatas datas;
-
+    //data
     @GetMapping("/add")
-    public @ResponseBody String add(@RequestParam String complect, @RequestParam String starting){
-        First_aid device = new First_aid(complect, starting);
-        datas.save(device);
+    public @ResponseBody String add(@RequestParam String complect){
+        First_aid first_aid = new First_aid(complect);
+        datas.save(first_aid);
         return "Saved";
     }
-    @GetMapping("/all")
+    @GetMapping("/list")
     public @ResponseBody Iterable<First_aid> getAll(){
         return datas.findAll();
     }
