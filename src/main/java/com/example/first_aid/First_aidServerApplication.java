@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FirstAidApplication {
+public class First_aidServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FirstAidApplication.class, args);
+        SpringApplication.run(First_aidServerApplication.class, args);
     }
 
 }

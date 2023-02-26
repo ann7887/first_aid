@@ -12,12 +12,10 @@ public class First_aid {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String complect;
-    private String starting;
 
-    public First_aid(String complect, String starting) {
-
+    public First_aid(String complect) {
+        this.complect = complect;
     }
-
 
     public String getComplect() {
         return complect;
@@ -35,16 +33,6 @@ public class First_aid {
         this.id = id;
     }
 
-    public First_aid(String complect) {
-        this.complect = complect;
-    }
 
-    public String getStarting() {
-        return starting;
-    }
-
-    public void setStarting(String starting) {
-        this.starting = starting;
-    }
 
 }
